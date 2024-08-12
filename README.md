@@ -9,7 +9,23 @@ Finance Tracker is a web app implemented using Flask and bootstrap that works li
 - Sell: Users can sell shares of a stock.
 - History: User can see the past transaction history.
 
+### Project Demo
+
+https://youtu.be/AO-2lRHk4hU
+
 <hr/>
+
+![1](res/1.png)
+<br/>
+![2](res/2.png)
+<br/>
+![3](res/3.png)
+<br/>
+![4](res/4.png)
+<br/>
+![5](res/5.png)
+<br/>
+![6](res/6.png)
 
 ## Tech Stack-
 
