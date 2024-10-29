@@ -1,46 +1,85 @@
-# Finance Tracker
+# Balance System
 
-Finance Tracker is a web app implemented using Flask and bootstrap that works like a mini stock exchange system. The following functionalities have been added to the app-
+## Project Information
 
-- Register: Any person can register to make a new account.
-- Quote: A registered user can quote a price for a stock.
-- Buy: Users can buy shares for a price.
-- Index: To show the stocks in the user's account.
-- Sell: Users can sell shares of a stock.
-- History: User can see the past transaction history.
+- **Author**: Pyae Phyo
+- **GitHub Username**: pphyo
+- **edX Username**: pphyo206
+- **Location**: Yangon, Myanmar
+- **Date**: October 29, 2024
 
-### Project Demo
+**Video Demo**: [URL HERE]  
 
-https://youtu.be/AO-2lRHk4hU
+**Description**:  
+The Balance System is a comprehensive financial management application that allows users to manage their account balance through various operations. This project was developed to provide a simple yet effective way for users to handle their financial transactions.
 
-<hr/>
+## Features
 
-![1](https://user-images.githubusercontent.com/43414928/79959356-acaf6b80-84a1-11ea-88b1-721e18ebdcef.png)
-<br/>
-![2](https://user-images.githubusercontent.com/43414928/79959291-95707e00-84a1-11ea-8cf1-0bb32cc4b496.png)
-<br/>
-![3](https://user-images.githubusercontent.com/43414928/79959295-973a4180-84a1-11ea-8ede-eeb86f41f739.png)
-<br/>
-![4](https://user-images.githubusercontent.com/43414928/79959314-9acdc880-84a1-11ea-9cbc-cf7685ef91f7.png)
-<br/>
-![5](https://user-images.githubusercontent.com/43414928/79959301-99040500-84a1-11ea-8f6b-50b7ff866c83.png)
-<br/>
-![6](https://user-images.githubusercontent.com/43414928/79959312-9acdc880-84a1-11ea-8a37-3a69d21e374f.png)
+### User Authentication
 
+- Secure login system
+- New user registration
+- Password protection for all accounts
 
-## Tech Stack-
+### Account Management
 
-* Python
-* Flask
-* SQLAlchemy
-(Other dependancies can be found out in te requirements.txt file)
+- Check current balance
+- Deposit funds
+- Withdraw funds
+- View detailed transaction history
 
-## Installation-
+### Transaction History
 
-1] Star and clone the repository to your machine.
+- Complete log of all transactions
+- Date and time stamps for each transaction
+- Transaction type (deposit/withdrawal)
+- Amount details
 
-2] Run the command `pip install -r requirements.txt`
+## Technical Details
 
-3] Once all the dependancies have been installed, run the command `python Main.py`
+- **Built using**: Python
+- **Data persistence**: SQLite database
+- **Security**: Secure password hashing
+- **Error Handling**: Input validation and error handling
+- **Interface**: User-friendly command-line interface
 
-4] This should start a local server and you can access it on your browser.
+## How to Use
+
+### Registration
+
+1. Create a new account with a username and password.
+2. The system automatically creates your account with a 0 balance.
+
+### Login
+
+- Access your account using registered credentials.
+- View your current balance immediately upon login.
+
+### Transactions
+
+- **Deposit**: Add funds to your account.
+- **Withdraw**: Remove funds from your account (subject to available balance).
+- **History**: View all your past transactions.
+
+## Security Features
+
+- Encrypted password storage
+- Session management
+- Transaction verification
+- Input sanitization
+
+This Balance System provides a foundation for basic financial management while ensuring security and reliability. It's designed to be user-friendly while maintaining robust functionality.
+
+## How to run
+
+`pip install -r requirements.txt`
+
+And open the python shell and enter below command to initialize database
+
+`from helpers import init_db`
+
+`init_db()`
+
+And then
+
+`flask run`

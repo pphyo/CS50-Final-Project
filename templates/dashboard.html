@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Balance</h5>
+                    <h2 class="card-text">
+                        {% if balance is not none %}
+                        {{ "{:,.2f}".format(balance) }} USD
+                        {% else %}
+                        0.00 USD
+                        {% endif %}
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <a href="{{ url_for('deposit') }}" class="btn btn-success btn-lg btn-block mb-3">
+                Deposit
+            </a>
+        </div>
+        <div class="col-md-6">
+            <a href="{{ url_for('withdraw') }}" class="btn btn-primary btn-lg btn-block mb-3">
+                withdraw
+            </a>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-12">
+            <h3>Transaction History</h3>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Amount</th>
+                            <th>Note</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for transaction in transactions %}
+                        <tr>
+                            <td>{{ transaction['created_at'] }}</td>
+                            <td>
+                                {% if transaction['type'] == 'deposit' %}
+                                <span class="badge bg-success">Deposit</span>
+                                {% else %}
+                                <span class="badge bg-primary">Withdraw</span>
+                                {% endif %}
+                            </td>
+                            <td>{{ "{:,.2f}".format(transaction['amount']) }} USD</td>
+                            <td>{{ transaction['description'] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
