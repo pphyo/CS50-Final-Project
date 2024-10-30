@@ -4,15 +4,6 @@
 
 #### Description
 
-## Project Information
-
-- **Author**: Pyae Phyo
-- **GitHub Username**: pphyo
-- **edX Username**: pphyo206
-- **Location**: Yangon, Myanmar
-- **Date**: October 29, 2024
-
-**Description**:  
 The Balance System is a comprehensive financial management application that allows users to manage their account balance through various operations. This project was developed to provide a simple yet effective way for users to handle their financial transactions.
 
 ## Features
