@@ -8,7 +8,7 @@
 - **Location**: Yangon, Myanmar
 - **Date**: October 29, 2024
 
-**Video Demo**: <https://youtu.be/E7WGs1_h98I>
+**Video Demo**: <https://youtu.be/AWgyDxRO8Zc>
 
 **Description**:  
 The Balance System is a comprehensive financial management application that allows users to manage their account balance through various operations. This project was developed to provide a simple yet effective way for users to handle their financial transactions.
